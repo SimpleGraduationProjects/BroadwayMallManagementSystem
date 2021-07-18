@@ -23,6 +23,7 @@
         <webroots>
           <root url="file://$MODULE_DIR$/WebContent" relative="/" />
         </webroots>
+        <sourceRoots />
       </configuration>
     </facet>
   </component>
@@ -32,8 +33,8 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
-    <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
       <library name="c3p0-0.9.1.2.jar">
         <CLASSES>
@@ -97,7 +98,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="jsp-api" level="project" />
     <orderEntry type="library" name="lib" level="project" />
+    <orderEntry type="library" name="jsp-api" level="project" />
   </component>
 </module>
