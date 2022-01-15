@@ -1,8 +1,9 @@
-# BroadwayMallManagementSystem
+# 30.BroadwayMallManagementSystem
 
 <p>群: 123300273(大佬群 2TB学习资料)(入群获取sql文件)</p>
 <p>QQ: 1095737364(入群获取sql文件)</p>
-<p><h1 align="center">百脑汇商城管理系统</h1></p>
+
+<p><h1 align="center">30.百脑汇商城管理系统</h1></p>
 
 
 <p align="center">
