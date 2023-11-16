@@ -9,7 +9,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 /**
- * 
+ *
  * JDBC 的工具类
  *
  */
@@ -22,7 +22,7 @@ public class JDBCUtils {
             dataSource = new ComboPooledDataSource();
             dataSource.setUser("root");
             dataSource.setPassword("123456");
-            dataSource.setJdbcUrl("jdbc:mysql:///estore?useUnicode=true&characterEncoding=utf-8");
+            dataSource.setJdbcUrl("jdbc:mysql:///graduation_30_estore?useUnicode=true&characterEncoding=utf-8");
             dataSource.setDriverClass("com.mysql.jdbc.Driver");
             dataSource.setInitialPoolSize(2);
             dataSource.setAcquireIncrement(5);
@@ -37,9 +37,9 @@ public class JDBCUtils {
             throw new RuntimeException(e);
         }
     }
-	
+
 	//获取数据库连接
-	public static Connection getConnection(){  
+	public static Connection getConnection(){
 		try {
 			return dataSource.getConnection();
 		} catch (SQLException e) {
@@ -47,7 +47,7 @@ public class JDBCUtils {
 			throw new DBException("数据库连接错误!");
 		}
 	}
- 
+
 	//关闭数据库连接
 	public static void release(Connection connection) {
 		try {
@@ -59,7 +59,7 @@ public class JDBCUtils {
 			throw new DBException("数据库连接错误!");
 		}
 	}
-	
+
 	//关闭数据库连接
 	public static void release(ResultSet rs, Statement statement) {
 		try {
@@ -70,7 +70,7 @@ public class JDBCUtils {
 			e.printStackTrace();
 			throw new DBException("数据库连接错误!");
 		}
-		
+
 		try {
 			if(statement != null){
 				statement.close();
@@ -80,5 +80,5 @@ public class JDBCUtils {
 			throw new DBException("数据库连接错误!");
 		}
 	}
-	
+
 }
